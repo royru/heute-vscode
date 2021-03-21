@@ -2,7 +2,7 @@ import * as vscode from "vscode"
 
 export function activate(context: vscode.ExtensionContext) {
   const provider = vscode.languages.registerCompletionItemProvider(
-    "*",
+    { scheme: "file" },
     {
       provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
         const now = new Date()
@@ -22,12 +22,10 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(provider)
 }
 
-
 function dateToString(d: Date): string {
   let m = d.getMonth() + 1
   const month = m < 10 ? "0" + m : m
   const day = d.getDate() < 10 ? "0" + d.getDate() : d.getDate()
   const year = d.getFullYear()
   return `${year}-${month}-${day}`
-
 }
