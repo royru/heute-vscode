@@ -2,7 +2,7 @@
 	"name": "heute-vscode",
 	"displayName": "heute",
 	"description": "heute prints today or tomorrow in the format yyyy-mm-dd",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"publisher": "royru",
 	"icon": "logo.png",
 	"repository": {
