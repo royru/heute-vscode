@@ -4,7 +4,7 @@
 	"description": "heute prints today or tomorrow in the format yyyy-mm-dd",
 	"version": "1.0.0",
 	"publisher": "royru",
-	"icon": "logo.png",
+	"icon": "assets/logo.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/royru/heute-vscode"
